@@ -1,14 +1,20 @@
 import React from "react";
 import "../../App.css"
+import { useTranslation } from 'react-i18next';
 
 const Dir = () => {
+    const { i18n } = useTranslation();
+
+    function changeLanguage(language) {
+        i18n.changeLanguage(language);
+      }
 
     return (
         <nav>
             <div className='options'>
                 <a href="/home" className='hover-underline-animation'> Home </a>
-                <a href="/english" className='hover-underline-animation'> Inglés </a>
-                <a href="/spanish" className='hover-underline-animation'> Español </a>
+                <a className='hover-underline-animation' onClick={() => changeLanguage("en")}> Inglés </a>
+                <a className='hover-underline-animation' onClick={() => changeLanguage("es")}> Español </a>
             </div>
         </nav>
     );

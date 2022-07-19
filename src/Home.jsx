@@ -11,8 +11,7 @@ const Home = () => {
             <BrowserRouter>
                 <Routes>
                     <Route path="/home" element={<App />}></Route>
-                    <Route path="/english" element={<App />}></Route>
-                    <Route path="/spanish" element={<App />}></Route>
+                    <Route path="/" element={<App />}></Route>
                 </Routes>
             </BrowserRouter>
         </div>
