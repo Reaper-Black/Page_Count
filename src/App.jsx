@@ -25,6 +25,10 @@ function App() {
           <p>Contador de visitas: {count}</p>
         </div>
       </div>
+      <div className='tecno-manage'>
+        <p>Tecnologías que manejan</p>
+        <img className="picture-red" src="./img/redes.png" alt="redes"></img>
+      </div>
     </div>
   )
 }
