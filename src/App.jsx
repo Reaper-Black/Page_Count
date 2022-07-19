@@ -10,20 +10,21 @@ function App() {
       <div className='photo'>
         <img className="picture" src="./img/me.jpeg" alt="perfil"></img>
       </div>
-      <div className='name'>
+      <div className='top'>
         <h1>Jesús Andrés Chacón Hernández</h1>
       </div>
-      <div className='information'>
+      <div className='info'>
         <p>Al finalizar la carrera me gustaría encontrar un buen trabajo referente a esto y no fracasar</p>
         <p>para asi poder tener un buen sustento economico y no fallar en el intento.</p>
       </div>
-      <div className="card">
-        <button className="button-visit" onClick={() => setCount((count) => count + 1)}>Contar Visita: </button>
+      <div className='button'>
+        <div className="btn-group">
+          <button onClick={() => setCount((count) => count + 1)}>Contar Visita: </button>
+        </div>
+        <div>
+          <p>Contador de visitas: {count}</p>
+        </div>
       </div>
-      <div>
-        <p>Contador de visitas: {count}</p>
-      </div>
-
     </div>
   )
 }

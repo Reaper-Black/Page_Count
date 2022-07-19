@@ -1,41 +1,146 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Stick+No+Bills&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Indie Flower', cursive;
+  font-family: 'Stick No Bills', sans-serif;
+}
+
+body {
+  background-color: #000000;
+}
+
+
+.btn-group {
+  display: flex;
+}
+
+.btn-group button {
+  outline: none;
+  border: none;
+  width: 150px;
+  padding: 0.3rem 0;
+  margin: 1rem;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #82D31C;
+  border-radius: 3px;
+}
+
+nav {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #313030;
+  color: whitesmoke;
+  font-family: 'Indie Flower', cursive;
+  font-family: 'Stick No Bills', sans-serif;
+}
+
+.options {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+}
+
+.options a {
+  display: inline-block;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  font-family: 'Indie Flower', cursive;
+  font-family: 'Stick No Bills', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 50px;
+  padding: 0 38px;
+  outline: none !important;
   text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-size: 200% auto;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.options a:hover {
+  color: #FFFFFF;
+  transform: scale(1.2);
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.options a:link,
+.options a:visited {
+  color: #FFFFFF;
+  outline: transparent;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
 }
 
-.card {
-  padding: 2em;
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: whitesmoke;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
 }
 
-.read-the-docs {
-  color: #888;
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+
+.picture{
+  border-radius: 50%;
+  margin-top: 80px;
+  width: 400px;
+  height: 400px;
+  margin-left: 1300px;
+}
+
+.picture:hover{
+  filter: opacity(.5);
+}
+
+.top{
+  color: whitesmoke;
+  font-size: 20px;
+  text-align: left;
+  text-align: justify;
+  position: relative;
+  top: -350px;
+  left: 100px;
+}
+
+.info{
+  color: whitesmoke;
+  font-size: 20px;
+  text-align: left;
+  text-align: justify;
+  position: relative;
+  top: -350px;
+  left: 100px;
+}
+
+.button{
+  color: whitesmoke;
+  font-size: 15px;
+  text-align: left;
+  text-align: justify;
+  position: relative;
+  top: -350px;
+  left: 100px;
 }
